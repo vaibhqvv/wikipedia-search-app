@@ -21,7 +21,7 @@ def home():
             if(page.exists):
                 result = page.summary[:10000] #get first 1000 characters of summary
             else:
-                result = "The page does not exist on Wikipedia."
+                result = "The page doesn't exist on Wikipedia."
         except Exception as e:
             result = f"An error occured: {str(e)}"
         
